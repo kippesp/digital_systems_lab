@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:49:17 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Wed Jun  3 22:54:23 2020
+# Process ID: 3452
+# Current directory: C:/Users/kippesp/projects/mit6.111/lab_1/lab_1.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/kippesp/projects/mit6.111/lab_1/lab_1.sim/sim_1/behav/xsim/xsim.dir/top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/kippesp/projects/mit6.111/lab_1/lab_1.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/kippesp/projects/mit6.111/lab_1/lab_1.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/kippesp/projects/mit6.111/lab_1/lab_1.sim/sim_1/behav/xsim/xsim.dir/top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
