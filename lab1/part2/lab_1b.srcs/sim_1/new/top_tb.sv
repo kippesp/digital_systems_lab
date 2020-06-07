@@ -75,7 +75,7 @@ module binhex_tb;
         sw = 4'b1001;
         #10;
         $display("Input is: %4b, Output is %7b",sw,leds);
-        assert(leds==7'b1101111) else $error("Didn't draw 9 right :/");
+        assert(leds==7'b1100111) else $error("Didn't draw 9 right :/");
         
         sw = 4'b1010;
         #10;

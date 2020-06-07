@@ -2,8 +2,8 @@
 # Vivado v2019.2.1 (64-bit)
 # SW Build 2729669 on Thu Dec  5 04:49:17 MST 2019
 # IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
-# Start of session at: Sun Jun  7 11:48:30 2020
-# Process ID: 9044
+# Start of session at: Sun Jun  7 12:23:57 2020
+# Process ID: 12664
 # Current directory: C:/Users/kippesp/projects/mit6.111/lab1/part2/lab_1b.runs/synth_1
 # Command line: vivado.exe -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
 # Log file: C:/Users/kippesp/projects/mit6.111/lab1/part2/lab_1b.runs/synth_1/top_level.vds

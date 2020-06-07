@@ -52,7 +52,7 @@ module binary_to_seven_seg(
     assign hex_out[3] = num0        + num2 + num3        + num5 + num6        + num8               + numB + numC + numD + numE;
 
     assign hex_out[4] = num0        + num2                      + num6        + num8        + numA + numB + numC + numD + numE + numF;
-    assign hex_out[5] = num0        + num2        + num4 + num5 + num6        + num8 + num9 + numA + numB               + numE + numF;
+    assign hex_out[5] = num0                      + num4 + num5 + num6        + num8 + num9 + numA + numB               + numE + numF;
     assign hex_out[6] =               num2 + num3 + num4 + num5 + num6        + num8 + num9 + numA + numB + numC + numD + numE + numF;
 
 endmodule //binary_to_hex
