@@ -9,9 +9,9 @@ Xilinx Vivado 2019.2.
 
 == Labs
 
-. Getting Started, finished May 2019
-. Lab 1 Combinatorial Logic
-. Lab 2
+. Getting Started, finished May 2020
+. Lab 1 Combinatorial Logic, finished June 2020
+. Lab 2 UART
     .. Part 1
     .. Part 2
 . Lab 3 Pong
