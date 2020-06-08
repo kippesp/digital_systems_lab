@@ -11,9 +11,9 @@ Xilinx Vivado 2019.2.
 
 . Getting Started, finished May 2020
 . Lab 1 Combinatorial Logic, finished June 2020
-. Lab 2 UART
-    .. Part 1
-    .. Part 2
+. Lab 2 Clocks, debouncing, and UART
+    .. Part 1 - mutiple 7-segment control
+    .. Part 2 - interfacing with DSD TECH SH-U09F USB-to-TTL adapter
 . Lab 3 Pong
 . Lab 4 Car Alarm
 . Lab 5A Audio Unit
