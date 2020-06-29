@@ -47,8 +47,8 @@ endmodule //seven_seg_controller
 
 
 //feel free to either include binary_to_seven_seg module here or in its own file!
-module binary_to_seven_seg ( input [3:0] val_in, output logic [6:0] led_out);
+//module binary_to_seven_seg ( input [3:0] val_in, output logic [6:0] led_out);
     //
     //  your previously written function
     //
-endmodule // binary_to_seven
+//endmodule // binary_to_seven
