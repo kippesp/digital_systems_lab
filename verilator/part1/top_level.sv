@@ -1,0 +1,1 @@
+../../lab2/part1/simple_counter/simple_counter.srcs/sources_1/new/top_level.sv

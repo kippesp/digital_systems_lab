@@ -6,17 +6,17 @@ CFILES=$(wildcard *.cpp)
 
 VTOP_COMMAND_LINE=
 
-all: obj_dir/Vtop
+all: obj_dir/Vtop_level
 
-obj_dir/Vtop: obj_dir/Vtop.mk
-	$(MAKE) -j2 -C obj_dir/ -f Vtop.mk CXX="clang++"
+obj_dir/Vtop_level: obj_dir/Vtop_level.mk
+	$(MAKE) -j2 -C obj_dir/ -f Vtop_level.mk CXX="clang++"
 
-obj_dir/Vtop.mk: $(VFILES) $(CFILES) 
-	verilator -Wall -Wno-LITENDIAN -Wno-lint -O3 $(TRACE) --no-skip-identical --cc top.sv \
-	--exe $(CFILES) --top-module top
+obj_dir/Vtop_level.mk: $(VFILES) $(CFILES) 
+	verilator -Wall -Wno-LITENDIAN -Wno-lint -O3 $(TRACE) --no-skip-identical --cc top_level.sv \
+	--exe $(CFILES) --top-module top_level
 
-run: obj_dir/Vtop
-	cd obj_dir/ && ./Vtop $(VTOP_COMMAND_LINE)
+run: obj_dir/Vtop_level
+	cd obj_dir/ && ./Vtop_level $(VTOP_COMMAND_LINE)
 
 clean:
 	rm -rf obj_dir/ trace.vcd core

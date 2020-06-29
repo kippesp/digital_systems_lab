@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string.h>
-#include "Vtop.h"
+#include "Vtop_level.h"
 #include "verilated.h"
 #if VM_TRACE
 # include <verilated_vcd_c.h>
@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
 
   // initialize verilator
   Verilated::commandArgs(argc, argv);
-  Vtop top;
+  Vtop_level top;
 
   // to ensure repeatability of the generated random numbers
   srand(0);
@@ -50,6 +50,7 @@ int main(int argc, char* argv[]) {
   // remember to advance the time properly after each new input set
   //////////////////////////////////////////////////////////////////////
 
+#if 0
   top.data = 0x0;
   top.big_endian = 0;
   ADVANCE(10);
@@ -77,6 +78,7 @@ int main(int argc, char* argv[]) {
   VL_PRINTF("data=%02x big_endian=%x send_data=%02x\n", top.data, top.big_endian, top.send_data);
 
   ADVANCE(10);
+#endif
 
   //////////////////////////////////////////////////////////////////////
   // finalize
