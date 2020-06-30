@@ -8,9 +8,9 @@ module top_level(input [15:0]        sw,
                  output logic        ce,
                  output logic        cf,
                  output logic        cg,
-                 output logic[7:0]   an
+                 output logic [7:0]  an
     );
 
-    seven_seg_controller my_controller ( .val_in(sw), .rst_in(btnd), .clk_in(clk_100mhz), .cat_out({cg,cf,ce,cd,cc,cb,ca}), .an_out(an));
+    seven_seg_controller my_controller (.val_in({16'h0000,sw}), .rst_in(btnd), .clk_in(clk_100mhz), .cat_out({cg,cf,ce,cd,cc,cb,ca}), .an_out(an));
 
 endmodule

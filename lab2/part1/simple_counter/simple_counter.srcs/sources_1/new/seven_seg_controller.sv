@@ -1,16 +1,16 @@
 module seven_seg_controller(input               clk_in,
                             input               rst_in,
                             input [31:0]        val_in,
-                            output logic[7:0]   cat_out,
+                            output logic[6:0]   cat_out,
                             output logic[7:0]   an_out
     );
   
-    logic[7:0]      segment_state;
-    logic[31:0]     segment_counter;
+    logic [7:0]     segment_state;
+    logic [31:0]    segment_counter;
     logic [3:0]     routed_vals;
     logic [6:0]     led_out;
     
-    binary_to_seven_seg my_converter ( .val_in(routed_vals), .led_out(led_out));
+    binary_to_seven_seg my_converter (.val_in(routed_vals), .led_out(led_out));
     assign cat_out = ~led_out;
     assign an_out = ~segment_state;
 

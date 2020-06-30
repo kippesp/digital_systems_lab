@@ -1,10 +1,6 @@
-module binary_to_seven_seg( 
-                            val_in,
-                            led_out
+module binary_to_seven_seg(input [3:0]          val_in,
+                           output logic [6:0]   led_out
 );
-
-    input [3:0]             val_in;  //declaring input explicitely
-    output logic [6:0]      led_out;  //declaring output explicitely
 
     //your logic here
     //many ways to do this (syntatically)
