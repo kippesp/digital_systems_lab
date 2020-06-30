@@ -40,6 +40,7 @@ int main(int argc, char* argv[]) {
 #endif
 
 #define ADVANCE(ns) do {               \
+                top.clk_100mhz ^= 1;    \
 		top.eval();                        \
 		if (tfp) tfp->dump(main_time);     \
 		main_time += ns;                   \
@@ -50,35 +51,94 @@ int main(int argc, char* argv[]) {
   // remember to advance the time properly after each new input set
   //////////////////////////////////////////////////////////////////////
 
-#if 0
-  top.data = 0x0;
-  top.big_endian = 0;
+  top.sw = 0x0000;
+  top.btnd = 0;
   ADVANCE(10);
+  VL_PRINTF("sw=%04x clk=%d, cat=%d%d%d%d%d%d%d, an=%02x\n", top.sw, top.clk_100mhz,
+          top.ca, top.cb, top.cc, top.cd, top.ce, top.cf, top.cg,
+          top.an);
 
-  VL_PRINTF("data=%02x big_endian=%x send_data=%02x\n", top.data, top.big_endian, top.send_data);
-
-  top.data = 0x1; ADVANCE(10);
-  VL_PRINTF("data=%02x big_endian=%x send_data=%02x\n", top.data, top.big_endian, top.send_data);
-
-  top.data = 0x80; ADVANCE(10);
-  VL_PRINTF("data=%02x big_endian=%x send_data=%02x\n", top.data, top.big_endian, top.send_data);
-
-  top.data = 0x10; ADVANCE(10);
-  VL_PRINTF("data=%02x big_endian=%x send_data=%02x\n", top.data, top.big_endian, top.send_data);
-
-  top.big_endian = 1;
-
-  top.data = 0x1; ADVANCE(10);
-  VL_PRINTF("data=%02x big_endian=%x send_data=%02x\n", top.data, top.big_endian, top.send_data);
-
-  top.data = 0x80; ADVANCE(10);
-  VL_PRINTF("data=%02x big_endian=%x send_data=%02x\n", top.data, top.big_endian, top.send_data);
-
-  top.data = 0x10; ADVANCE(10);
-  VL_PRINTF("data=%02x big_endian=%x send_data=%02x\n", top.data, top.big_endian, top.send_data);
-
+  top.sw = 0x0000;
+  top.btnd = 0;
   ADVANCE(10);
-#endif
+  VL_PRINTF("sw=%04x clk=%d, cat=%d%d%d%d%d%d%d, an=%02x\n", top.sw, top.clk_100mhz,
+          top.ca, top.cb, top.cc, top.cd, top.ce, top.cf, top.cg,
+          top.an);
+
+  top.sw = 0x0000;
+  top.btnd = 0;
+  ADVANCE(10);
+  VL_PRINTF("sw=%04x clk=%d, cat=%d%d%d%d%d%d%d, an=%02x\n", top.sw, top.clk_100mhz,
+          top.ca, top.cb, top.cc, top.cd, top.ce, top.cf, top.cg,
+          top.an);
+
+  top.sw = 0x0000;
+  top.btnd = 0;
+  ADVANCE(10);
+  VL_PRINTF("sw=%04x clk=%d, cat=%d%d%d%d%d%d%d, an=%02x\n", top.sw, top.clk_100mhz,
+          top.ca, top.cb, top.cc, top.cd, top.ce, top.cf, top.cg,
+          top.an);
+
+
+
+  top.sw = 0x0001;
+  top.btnd = 0;
+  ADVANCE(10);
+  VL_PRINTF("sw=%04x clk=%d, cat=%d%d%d%d%d%d%d, an=%02x\n", top.sw, top.clk_100mhz,
+          top.ca, top.cb, top.cc, top.cd, top.ce, top.cf, top.cg,
+          top.an);
+
+  top.sw = 0x0001;
+  top.btnd = 0;
+  ADVANCE(10);
+  VL_PRINTF("sw=%04x clk=%d, cat=%d%d%d%d%d%d%d, an=%02x\n", top.sw, top.clk_100mhz,
+          top.ca, top.cb, top.cc, top.cd, top.ce, top.cf, top.cg,
+          top.an);
+
+  top.sw = 0x0001;
+  top.btnd = 0;
+  ADVANCE(10);
+  VL_PRINTF("sw=%04x clk=%d, cat=%d%d%d%d%d%d%d, an=%02x\n", top.sw, top.clk_100mhz,
+          top.ca, top.cb, top.cc, top.cd, top.ce, top.cf, top.cg,
+          top.an);
+
+  top.sw = 0x0001;
+  top.btnd = 0;
+  ADVANCE(10);
+  VL_PRINTF("sw=%04x clk=%d, cat=%d%d%d%d%d%d%d, an=%02x\n", top.sw, top.clk_100mhz,
+          top.ca, top.cb, top.cc, top.cd, top.ce, top.cf, top.cg,
+          top.an);
+
+
+
+  top.sw = 0x0002;
+  top.btnd = 0;
+  ADVANCE(10);
+  VL_PRINTF("sw=%04x clk=%d, cat=%d%d%d%d%d%d%d, an=%02x\n", top.sw, top.clk_100mhz,
+          top.ca, top.cb, top.cc, top.cd, top.ce, top.cf, top.cg,
+          top.an);
+
+  top.sw = 0x0002;
+  top.btnd = 0;
+  ADVANCE(10);
+  VL_PRINTF("sw=%04x clk=%d, cat=%d%d%d%d%d%d%d, an=%02x\n", top.sw, top.clk_100mhz,
+          top.ca, top.cb, top.cc, top.cd, top.ce, top.cf, top.cg,
+          top.an);
+
+  top.sw = 0x0002;
+  top.btnd = 0;
+  ADVANCE(10);
+  VL_PRINTF("sw=%04x clk=%d, cat=%d%d%d%d%d%d%d, an=%02x\n", top.sw, top.clk_100mhz,
+          top.ca, top.cb, top.cc, top.cd, top.ce, top.cf, top.cg,
+          top.an);
+
+  top.sw = 0x0002;
+  top.btnd = 0;
+  ADVANCE(10);
+  VL_PRINTF("sw=%04x clk=%d, cat=%d%d%d%d%d%d%d, an=%02x\n", top.sw, top.clk_100mhz,
+          top.ca, top.cb, top.cc, top.cd, top.ce, top.cf, top.cg,
+          top.an);
+
 
   //////////////////////////////////////////////////////////////////////
   // finalize
