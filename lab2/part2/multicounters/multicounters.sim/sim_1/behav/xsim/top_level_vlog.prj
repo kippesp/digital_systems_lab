@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../multicounters.srcs/sources_1/imports/mit6.111/binary_to_seven_seg.sv" \
+"../../../../multicounters.srcs/sources_1/imports/new/seven_seg_controller.sv" \
+"../../../../multicounters.srcs/sources_1/imports/new/top_level.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
